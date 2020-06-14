@@ -1,0 +1,7 @@
+{
+    "npm-intellisense.scanDevDependencies": true,
+    "npm-intellisense.showBuildInLibs": true,
+    "npm-intellisense.packageSubfoldersIntellisense": true,
+    "npm.enableRunFromFolder": true,
+    "npm.enableScriptExplorer": true
+}

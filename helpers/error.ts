@@ -1,6 +1,9 @@
 const config = require("config");
 
-class ErrorHandler extends Error {
+export class ErrorHandler extends Error {
+    private status: Number = 0;
+    private msg: String = "";
+    private location: any = null;
     constructor(status, msg, location) {
         super();
         this.status = status;
@@ -9,15 +12,14 @@ class ErrorHandler extends Error {
     }
 }
 
-
-const handleError = (err, res) => {
+export const handleError = (err, res) => {
     const { status, msg, location } = err;
     res.status(status || config.get('httpStatusCode.internalServerError')).json({
         msg, location, err
     });
 };
 
-module.exports = {
-    error: ErrorHandler,
-    handleError
-}
+// module.exports = {
+//     error: ErrorHandler,
+//     handleError
+// }

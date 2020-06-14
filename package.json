@@ -4,7 +4,8 @@
   "description": "A template for all the node apps",
   "main": "app.js",
   "scripts": {
-    "unit_test": "mocha 'test/unit/**/*.test.js'"
+    "unit_test": "mocha 'test/unit/**/*.test.js'",
+    "start": "ts-node ./app.ts"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/anurag8867/node_project_template#readme",
   "dependencies": {
+    "@types/express": "^4.17.6",
     "async": "^3.2.0",
     "body-parser": "^1.19.0",
     "chai": "^4.2.0",
@@ -26,9 +28,15 @@
     "express": "^4.17.1",
     "express-fileupload": "^1.1.7-alpha.3",
     "express-validator": "^6.5.0",
+    "fs": "0.0.1-security",
     "mocha": "^7.2.0",
-    "mysql": "^2.18.1",
+    "mongoose": "^5.9.18",
     "path": "^0.12.7",
-    "s": "^1.0.0"
+    "s": "^1.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.13"
   }
 }
