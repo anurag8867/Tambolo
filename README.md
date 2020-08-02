@@ -10,3 +10,6 @@
     * Express-validator
     * Config
     * Mongoose
+
+# Run:
+    * sudo docker-compose up
