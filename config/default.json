@@ -1,7 +1,7 @@
 {
-    "port": 3008,
+    "port": 8081,
     "db": {
-        "MongoURI": "mongodb://127.0.0.1:27017/Tambolo?authSource=admin"
+        "MongoURI": "mongodb://mongo:27017/Tambolo"
     },
     "httpStatusCode": {
         "continue": "100",
